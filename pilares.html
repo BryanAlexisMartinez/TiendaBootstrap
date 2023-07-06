@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<style>
+  .color1 {
+    background-color: rgb(226, 83, 226);
+  }
+
+  .font {
+    color: azure;
+  }
+</style>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <nav class="navbar color1 navbar-expand-lg bg-body-">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./src/img/logoDemon.png" alt="DemonSlayerLogo" width="50" height="50">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="pilares.html"><img src="https://cdn-icons-png.flaticon.com/128/7047/7047905.png"
+                alt="DemonSlayerLogo" width="30" height="30">Pilares</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://cdn-icons-png.flaticon.com/128/615/615303.png" alt="DemonSlayerLogo" width="30"
+                height="30">Lunas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="superiores.html">Superiores</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="inferiores.html">Inferiores</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link" href="cazadores.html"><img src="https://cdn-icons-png.flaticon.com/128/7047/7047905.png"
+                alt="DemonSlayerLogo" width="30" height="30">Cazadores</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>Carrito</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
+
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <main>
+
+    <h1>
+      <center>PILARES</center>
+    </h1>
+
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="https://http2.mlstatic.com/D_NQ_NP_713245-MLC48383522649_112021-O.webp" width="100%"
+                  height="100%" />
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Pilar del insecto.</p>
+                <p class="card-text">Shinobu Kocho.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                              comprando</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <small class="text-body-secondary"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="https://http2.mlstatic.com/D_NQ_NP_617322-MLC48610691738_122021-O.webp" width="100%"
+                  height="100%" />
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Pilar del sonido.</p>
+                <p class="card-text">Tengen Uzui.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                              comprando</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <small class="text-body-secondary"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="https://http2.mlstatic.com/D_NQ_NP_867136-MLM48066587924_102021-W.jpg" width="100%"
+                  height="100%" />
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Pilar del amor.</p>
+                <p class="card-text">Mitusuri Kanroji.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                              comprando</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <small class="text-body-secondary"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="https://m.media-amazon.com/images/I/41NocEup5dL._AC_.jpg" width="100%" height="100%" />
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Pilar de la niebla.</p>
+                <p class="card-text">Muichiro Tokito.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                              comprando</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <small class="text-body-secondary"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="https://m.media-amazon.com/images/I/41iVD8xu2yL.__AC_SX300_SY300_QL70_ML2_.jpg"
+                  width="100%" height="100%" />
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Pilar de la llama.</p>
+                <p class="card-text">Kyojuro Rengoku.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                              comprando</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <small class="text-body-secondary"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="https://m.media-amazon.com/images/I/51mVryTceRL.__AC_SX300_SY300_QL70_ML2_.jpg"
+                  width="100%" height="100%" />
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Pilar del agua.</p>
+                <p class="card-text">Giyu Tomioka.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                              comprando</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <small class="text-body-secondary"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="https://http2.mlstatic.com/D_NQ_NP_890890-MLM48066853253_102021-W.jpg" width="100%"
+                  height="100%" />
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Pilar de la serpiente.</p>
+                <p class="card-text">Obanai Iguro.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                              comprando</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <small class="text-body-secondary"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image href="https://http2.mlstatic.com/D_NQ_NP_885713-MLM48067629147_102021-O.webp" width="100%"
+                  height="100%" />
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Pilar del viento.</p>
+                <p class="card-text">Sanemi Shinazugawa.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                              comprando</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <small class="text-body-secondary"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <image
+                  href="data:image/jpeg;base64,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"
+                  width="100%" height="100%" />
+              </svg>
+              <div class="card-body">
+                <p class="card-text">Pilar de la roca.</p>
+                <p class="card-text">Gyomei Himejima.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">
+                      Añadir al carrito
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                              comprando</button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <small class="text-body-secondary"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Bryan Martínez</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook" />
+            </svg></a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>

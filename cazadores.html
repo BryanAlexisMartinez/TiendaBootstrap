@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<style>
+  .color1 {
+    background-color: rgb(226, 83, 226);
+  }
+</style>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <nav class="navbar color1 navbar-expand-lg bg-body-">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./src/img/logoDemon.png" alt="DemonSlayerLogo" width="50" height="50">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="pilares.html"><img src="https://cdn-icons-png.flaticon.com/128/7047/7047905.png"
+                alt="DemonSlayerLogo" width="30" height="30">Pilares</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://cdn-icons-png.flaticon.com/128/615/615303.png" alt="DemonSlayerLogo" width="30"
+                height="30">Lunas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="superiores.html">Superiores</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="inferiores.html">Inferiores</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link" href="cazadores.html"><img src="https://cdn-icons-png.flaticon.com/128/7047/7047905.png"
+                alt="DemonSlayerLogo" width="30" height="30">Cazadores</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>Carrito</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <h1>
+    <center>CAZADORES</center>
+  </h1>
+
+  <div class="alert alert-primary" role="alert">
+    Estamos trabajando para traerles las nuevas figuras de tus cazadores de demonios favoritos, ¡espéralas muy pronto!
+    <a href="pilares.html" class="alert-link">Ver otras figuras que podrían interesarte</a>.
+  </div>
+
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://m.media-amazon.com/images/I/71JC2f5t0nL._AC_SX569_.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Nezuko Kamado.</p>
+              <p class="card-text">Es la hermana menor de Tanjiro. Ella fue transformada en Demonio por Muzan Kibutsuji
+                acompañando a Tanjiro en su viaje para volver a ser humana.</p>
+              <br><br><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Añadir al carrito
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://m.media-amazon.com/images/I/51jd7Zls72L._AC_SY879_.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z" />
+                </svg>Kanao Tsuyuri.</p>
+              <p class="card-text">Es una Cazadora de Demonios, la hermana adoptiva de Kanae Kocho y Shinobu Kocho y una
+                Tsuguko.</p>
+              <br><br><br><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Añadir al carrito
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://m.media-amazon.com/images/I/711AO2AzjEL._AC_SX679_.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Tanjiro Kamado.</p>
+              <p class="card-text">Es el protagonista principal de Kimetsu no Yaiba. Es un cazador de Demonios cuyo
+                principal objetivo es encontrar al responsable de haber matado a su familia y convertido a su hermana
+                Nezuko en una Demonio[4] y luego juró derrotar a Muzan Kibutsuji, el Rey de los Demonios, para evitar
+                que otros sufran el mismo destino que él..</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Añadir al carrito
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://m.media-amazon.com/images/I/51zNKsgOGBL._AC_SX385_.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Zenitsu Agatsuma.</p>
+              <p class="card-text">Es un Cazador de Demonios y un compañero de viaje de Tanjiro Kamado. A su vez es uno
+                de los personajes principales de Kimetsu no Yaiba.</p>
+              <br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Añadir al carrito
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://m.media-amazon.com/images/I/51HxM2yX1TL._AC_SX679_.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Inosuke Hashibira.</p>
+              <p class="card-text">Es uno de los personajes principales de la franquicia Kimetsu no Yaiba. Fue un
+                Cazador de Demonios perteneciente al Cuerpo de Exterminio de Demonios, creador y único usuario conocido
+                de la Respiración de la Bestia.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Añadir al carrito
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://m.media-amazon.com/images/I/51nwa2sfM8L._AC_SX569_.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Murata.</p>
+              <p class="card-text">Es un miembro del Cuerpo de Exterminio de Demonios.</p>
+              <br><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Añadir al carrito
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Bryan Martínez</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook" />
+            </svg></a></li>
+      </ul>
+    </footer>
+  </div>
+
+</body>
+
+</html>

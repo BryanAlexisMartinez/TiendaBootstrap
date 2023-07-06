@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<style>
+  .color1 {
+    background-color: rgb(226, 83, 226);
+  }
+</style>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <nav class="navbar color1 navbar-expand-lg bg-body-">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./src/img/logoDemon.png" alt="DemonSlayerLogo" width="50" height="50">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+
+            <a class="nav-link" href="pilares.html"><img src="https://cdn-icons-png.flaticon.com/128/7047/7047905.png"
+                alt="DemonSlayerLogo" width="30" height="30">Pilares</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://cdn-icons-png.flaticon.com/128/615/615303.png" alt="DemonSlayerLogo" width="30"
+                height="30">Lunas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="superiores.html">Superiores</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="inferiores.html">Inferiores</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link" href="cazadores.html"><img src="https://cdn-icons-png.flaticon.com/128/7047/7047905.png"
+                alt="DemonSlayerLogo" width="30" height="30">Cazadores</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>Carrito</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <h1>
+    <center><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      </svg>LUNAS SUPERIORES<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-moon-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      </svg></center>
+  </h1>
+  <div class="alert alert-primary" role="alert">
+    Estamos trabajando para traerles las nuevas figuras de las lunas superiores, ¡espéralas muy pronto! <a
+      href="inferiores.html" class="alert-link">Ver otras figuras que podrían interesarte</a>.
+  </div>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+
+
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://www.fotovida.com.mx/comprassrc/temp/281978.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Luna superior uno.</p>
+              <p class="card-text">Kokushibo.</p>
+              <p class="card-text">Es el más poderoso de todas las lunas superiores y antes de convertirse en demonio
+                era un cazador de demonios y formó parte del Cuerpo de Exterminio de Demonios. Se le recuerda por ser
+                hermanos de Yoriichi Tsukiguni. Como característica tiene tres pares de ojos sin cejas que tienen color
+                rojo y amarillo. Destaca por realizar la Respiración de la Luna que tiene 16 diferentes posturas.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-danger">Próximamente</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://www.fotovida.com.mx/comprassrc/temp/281978.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Luna superior dos.</p>
+              <p class="card-text">Doma.</p>
+              <p class="card-text">Tiene la habilidad de poder regenerarse y utiliza un técnica de sangre demoniaca con
+                la cual puede manipular el Hielo.</p><br><br><br><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-danger">Próximamente</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://m.media-amazon.com/images/I/51U0oaOURVL._AC_SX679_.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Luna superior tres.</p>
+              <p class="card-text">Akaza.</p>
+              <p class="card-text">Cuando era humano se le conocía como Hakuji y es un demonio que conservó su
+                apariencia adoptando la forma de un joven musculoso con piel blanca y gran parte de su cuerpo decorado
+                por líneas azules. Destaca por su habilidad de resistir y su fuerza sobrehumana.</p><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Añadir al carrito
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://www.fotovida.com.mx/comprassrc/temp/281978.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Luna superior cuatro.</p>
+              <p class="card-text">Nakime.</p>
+              <p class="card-text">Es la demonio del Biwa, en este caso solamente tiene un solo ojo y una de sus
+                técnicas de sangre demoniaca se basa en el control de Fortaleza Dimensional Infinita.</p>
+              <br><br><br><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-danger">Próximamente</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://www.fotovida.com.mx/comprassrc/temp/281978.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Luna superior cinco.</p>
+              <p class="card-text">Gyokko.</p>
+              <p class="card-text">Se caracteriza por tener la habilidad de crear peces demoníacos que pueden lanzar
+                agujas con veneno o se comen a su enemigo y también cambian de piel para modificar su apariencia.</p>
+              <br><br><br><br>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-danger">Próximamente</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <image href="https://m.media-amazon.com/images/I/41-805jbS9L._AC_SX385_.jpg" width="100%" height="100%" />
+            </svg>
+            <div class="card-body">
+              <p class="card-text">Luna superior seis.</p>
+              <p class="card-text">Daki y Gyutaro.</p>
+              <p class="card-text">Daki y Gyutaro son hermanos y comparten el puesto de Luna Superior seis. Ambos
+                vivieron una vida muy dura, llena de tragedias, miseria y pobreza. Por su parte, Gyutaro poseía gran
+                capacidad de regeneración, que incluso le permitió tomar una espada Nichirin con su boca, sin que le
+                causara gran daño. También demostró ser bastante táctico e inteligente, era un excelente combatiente,
+                con gran resistencia y agilidad.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Añadir al carrito
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">¡Artículo añadido exitosamente!</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El artículo ha sido añadido correctamente a tu carrito, puedes seguir comprando :)
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir
+                            comprando</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Bryan Martínez</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram" />
+            </svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook" />
+            </svg></a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
